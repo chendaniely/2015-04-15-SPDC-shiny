@@ -17,12 +17,16 @@ With markdown we can do some pretty cool stuff like create headers
 ###### h6
 ####### h7
 
+# Basic markdown
+## Lists
+### Unordered lists
 bullet points:
 
 - bullet 1
 - bullet 2
 - bullet 3
 
+### Ordered lists
 and ordered lists
 
 1. item 1
@@ -35,6 +39,19 @@ Numbered lists do not need to be ordered corretly, or at all
 1. item 2
 1. item 3
 
+You can also nest things
+
+- bullet 1
+    - bullet 1.1
+        - bullet 1.1.1
+- bullet 2
+
+1. item 1
+    1. item 1.1
+        1. item 1.1.1
+1. item 2
+
+# Literate programming
 
 ```{r}
 # a typical chunk I have at the very top
