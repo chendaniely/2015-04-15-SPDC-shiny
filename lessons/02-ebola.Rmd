@@ -157,6 +157,8 @@ g
 
 https://chendaniely.shinyapps.io/shinyCountryTimeseries
 
+<img src="../images/deployed_ebola_screenshotpng.png" style="width:800px;"/>
+
 ## The repositories
 
 This is all possible beacause of [Caitlin](http://www.caitlinrivers.com/) [Rivers](https://twitter.com/cmyeaton) and all the [contributors](https://github.com/cmrivers/ebola/graphs/contributors) (29 as of 2015-04-14) to the [repository](https://github.com/cmrivers/ebola)
