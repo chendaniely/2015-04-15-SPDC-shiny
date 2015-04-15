@@ -1,0 +1,35 @@
+---
+title: "Conclusion"
+author: "Daniel Chen"
+date: "April 15, 2015"
+output: ioslides_presentation
+---
+
+## Additional Resources
+
+- http://shiny.rstudio.com/
+- http://shiny.rstudio.com/tutorial/
+- http://shiny.rstudio.com/articles/
+    - http://shiny.rstudio.com/articles/html-ui.html
+- http://shiny.rstudio.com/gallery/
+- http://rstudio.github.io/shinydashboard/
+
+## Shoutouts!
+My Data Science Instructors:
+
+- [Rachel Schutt](https://www.linkedin.com/in/rachelschutt)
+- [Kayur](http://kayur.org/) [Patel](https://twitter.com/foil)
+- [Jared](http://www.jaredlander.com/) [Lander](https://twitter.com/jaredlander)
+
+Data:
+
+- [Caitlin](http://www.caitlinrivers.com/) [Rivers](https://twitter.com/cmyeaton)
+
+SDAL:
+
+Sallie Keller, Stephanie Shipp, Ana Aizcorbe, Dave Higdon, Mark Orr, Aaron Schroeder,
+Gizem Korkmaz, Kathryn Ziemer, Bianica Pires, Emily Molfino, Kimberly Lyman, Sakinah Calender
+
+## Thanks!
+
+[\@chendaniely](https://twitter.com/chendaniely)
