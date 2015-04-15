@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/11594/chendaniely/2015-04-15-SPDC-shiny.svg)](#DOI)
 
+Ebola dataset and images were taken from Caitlin Rivers' repo: https://github.com/cmrivers/ebola
+
 Shiny Tutorial for Statistical Programming DC meetup on [2015-04-15](http://www.meetup.com/stats-prog-dc/events/221534560/)
 
 1. [Knitr](http://yihui.name/knitr/) primer
