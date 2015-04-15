@@ -25,8 +25,23 @@ To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authorin
 <!-- Taken from the default rmarkdown shiny document text -->
 You can embed Shiny inputs and outputs in your document. Outputs are automatically updated whenever inputs change.  This demonstrates how a standard R plot can be made interactive by wrapping it in the Shiny `renderPlot` function. The `selectInput` and `sliderInput` functions create the input widgets used to drive the plot.
 
+## Widgets
 Interactivity comes from widgets.  You can find a list of Shiny widgets here:
 http://shiny.rstudio.com/gallery/widget-gallery.html
+
+- `actionButton` - Action Button
+- `checkboxGroupInput` - A group of check boxes
+- `checkboxInput` - A single check box
+- `dateInput` - A calendar to aid date selection
+- `dateRangeInput` - A pair of calendars for selecting a date range
+- `fileInput` - A file upload control wizard
+- `helpText` - Help text that can be added to an input form
+- `numericInput` - A field to enter numbers
+- `radioButtons` - A set of radio buttons
+- `selectInput` - A box with choices to select from
+- `sliderInput` - A slider bar
+- `submitButton` - A submit button
+- `textInput` - A field to enter text
 
 ## Inputs
 ### Basics
