@@ -27,9 +27,9 @@ df <- read.csv(textConnection(data))
 df <- df[, !names(df) %in% c("Date")]
 
 #Convert to long table (day, type_place, count)
-long <- na.omit(melt(df, id.vars=c("Day")))
+long <- na.omit(melt(df, id.vars = c("Day")))
 #Split by _
-long[,c("type","place")] <- colsplit(long$variable, "_", c("type","place"))
+long[, c("type", "place")] <- colsplit(long$variable, "_", c("type", "place"))
 
 long <- long[,-2] #Drop old _-delimited col
 
@@ -37,7 +37,10 @@ long$type[long$type == "Case"] <- "Cases"
 names(long)[1] <- "absolute.days"
 names(long)[2] <- "count"
 
-long <- long %>% group_by(place) %>% mutate(relative.days = absolute.days - min(absolute.days)) %>% mutate(count=as.numeric(count))
+long <- long %>%
+    group_by(place) %>%
+    mutate(relative.days = absolute.days - min(absolute.days)) %>%
+    mutate(count = as.numeric(count))
 
 all <- unique(long$place)
 c_colors <- brewer.pal(length(all), 'Set1')
@@ -46,11 +49,15 @@ names(c_colors) <- all
 theme_set(theme_minimal())
 
 shinyServer(function(input, output) {
-
+    ###########################################################################
+    #
+    # This block of code will run when the app needs to react to something
+    #
+    ###########################################################################
     data_plot <- reactive({
         df_plot <- long
         selection <- input$countries
-        if("All" %in% input$countries || length(input$countries) == 0 ){
+        if("All" %in% input$countries || length(input$countries) == 0){
             selection <- all
         }else{
             selection <- input$countries
@@ -66,25 +73,23 @@ shinyServer(function(input, output) {
                            selected = "All")
     })
 
-
-
     plot <- reactive({
-        type = paste0(input$date_offset,".days")
+        type = paste0(input$date_offset, ".days")
         g <- ggplot(data = data_plot(),
                     aes_string(x = type, y = "count",
                                group = "place", color = "place")) +
-            geom_point() + geom_line()+
+            geom_point() + geom_line() +
             facet_grid(~ type) +
-            scale_x_continuous(name="Days after first report") +
-            scale_y_continuous(name="Counts") +
-            scale_colour_manual(name="Country", values=c_colors) +
+            scale_x_continuous(name = "Days after first report") +
+            scale_y_continuous(name = "Counts") +
+            scale_colour_manual(name = "Country", values = c_colors) +
             ggtitle("Number of observations for days after first report")
 
         if(!input$log){
             return(g)
         } else{
-            h <- g + scale_y_continuous(trans=log10_trans()) +
-                scale_y_log10(name="Counts") +
+            h <- g + scale_y_continuous(trans = log10_trans()) +
+                scale_y_log10(name = "Counts") +
                 ggtitle("Number of observations for days after first report (log10 scale)")
             return(h)
         }
