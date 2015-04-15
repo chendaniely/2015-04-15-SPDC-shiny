@@ -1,4 +1,7 @@
 # 2015-04-15-SPDC-shiny
+
+[![DOI](https://zenodo.org/badge/11594/chendaniely/2015-04-15-SPDC-shiny.svg)](#DOI)
+
 Shiny Tutorial for Statistical Programming DC meetup on [2015-04-15](http://www.meetup.com/stats-prog-dc/events/221534560/)
 
 1. [Knitr](http://yihui.name/knitr/) primer
