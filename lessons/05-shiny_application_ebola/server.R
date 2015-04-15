@@ -51,10 +51,16 @@ theme_set(theme_minimal())
 shinyServer(function(input, output) {
     ###########################################################################
     #
-    # This block of code will run when the app needs to react to something
+    # This block of code will run when a user visits the application
     #
     ###########################################################################
     data_plot <- reactive({
+        ###########################################################################
+        #
+        # Any render and ractive call will run when there is a change to a widget
+        # that is mapped to an output
+        #
+        ###########################################################################
         df_plot <- long
         selection <- input$countries
         if("All" %in% input$countries || length(input$countries) == 0){
