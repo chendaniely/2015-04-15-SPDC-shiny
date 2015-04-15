@@ -14,3 +14,6 @@ vignettes/*.pdf
 
 # knit button output
 lessons/*.html
+lessons/*_cache
+lessons/*_files
+lessons/Figs
