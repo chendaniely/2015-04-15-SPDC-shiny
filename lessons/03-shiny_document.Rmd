@@ -151,6 +151,12 @@ renderPlot({
 
 * * *
 
+# Shiny Application Notes
+You can find the cheatsheet for Shiny here: http://shiny.rstudio.com/articles/cheatsheet.html
+
+I've added the unzipped pdf into the github repo just for completeness sake.
+It the version in this repo is not guarenteed to be up to date.
+
 # Embedded Application
 <!-- Taken from the default rmarkdown shiny document text -->
 It's also possible to embed an entire Shiny application within an R Markdown document using the `shinyAppDir` function. This example embeds a Shiny application located in another directory:
