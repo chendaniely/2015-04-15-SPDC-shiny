@@ -17,7 +17,7 @@ There are 2 ways you can get the files
 1. If you know your way around github you can clone this repository.
 2. You can click the "Download Zip" button to the right and unzip all the files on to your computer.
 
-The Material used for the lesson are in the `lessons` folder.  They are numbered so you can go through them the exact same way I did turing the talk.
+The Material used for the lesson are in the `lessons` folder.  They are numbered so you can go through them the exact same way I did during the talk.
 
 # How to view/render the files
 
