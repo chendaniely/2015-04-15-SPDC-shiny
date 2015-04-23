@@ -25,3 +25,6 @@ To render or run everything: The simplest way is to open the `.Rmd` files and cl
 If you want to run the shiny app.  You have to open the `ui.R` and `server.R` files in rstudio, then you will have a `run app` button to click.
 
 If you want, the `.html` files in the `lessons` folder can be viewed directly so you do not have to render them in r/rstudio to go through the slides
+
+# Known bugs
+During the 04-lesson my image was not showing up in the shiny app.  Please see the issues tap on the top right to see why.  Essentially, I needed to add the image to a `www` folder within the shiny app folder.   
